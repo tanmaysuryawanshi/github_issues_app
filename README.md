@@ -5,7 +5,7 @@ An android app that shows closed issues in langchain repository which also works
 -MVVM with Clean Architecture  
 -uses retrofit for api call  
 -uses room for local database  
--has search funcitonality
+-has search funcitonality  
 -uses dagger hilt for dependency injection
 
 # Video
