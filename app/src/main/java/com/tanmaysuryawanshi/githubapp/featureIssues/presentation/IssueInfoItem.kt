@@ -112,11 +112,13 @@ verticalAlignment = Alignment.CenterVertically) {
         LazyRow(modifier = Modifier.fillMaxWidth()){
             items(item.labels){
                 Box(modifier = Modifier
+                    .border(width = 1.dp, color = Color(0xFFD2D7F1),shape = RoundedCornerShape(8.dp))
+                    .padding(1.dp)
                     .clip(shape = RoundedCornerShape(8.dp))
                     .background(Color(convertHexColor(it.color)))){
                     Text(text = it.name,
                         modifier = Modifier
-                            .padding(4.dp),
+                            .padding(vertical = 4.dp, horizontal = 8.dp),
                     color = Color.White)
                 }
                 Spacer(modifier = Modifier.width(8.dp))
